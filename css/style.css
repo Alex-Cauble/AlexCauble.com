@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
 :root {
-  --textonlight: #fff;
-  --textonhover: #aaa;
-  --bglight: #555;
+  --textOnLight: #fff;
+  --textOnHover: #aaa;
+  --bgLight: #555;
 }
 * {
   margin: 0;
@@ -21,7 +21,7 @@ img {
   height: auto;
 }
 
-/*Typogrophay*/
+/*Typography*/
 
 .title {
   font-size: 2.5rem;
@@ -47,11 +47,11 @@ header {
 
 header,
 header h1 {
-  color: var(--textonlight);
+  color: var(--textOnLight);
 }
 
 nav {
-  color: var(--textonlight);
+  color: var(--textOnLight);
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav li {
 }
 
 nav a {
-  color: var(--textonlight);
+  color: var(--textOnLight);
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: var(--textonhover);
+  color: var(--textOnHover);
 }
 
 .home-hero {
@@ -84,7 +84,7 @@ nav a:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100vmax;
-  color: var(--textonlight);
+  color: var(--textOnLight);
   width: 100%;
   height: 100vh;
 }
@@ -100,10 +100,10 @@ nav a:focus {
   text-transform: uppercase;
   padding: 0.5em 1.5em;
   border: 2px solid;
-  color: var(--textonlight);
+  color: var(--textOnLight);
 }
 
 .btn:hover,
 .btn:focus {
-  color: var(--textonhover);
+  color: var(--textOnHover);
 }
