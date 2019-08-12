@@ -81,6 +81,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
+  outline: none;
   color: var(--textOnHover);
 }
 
@@ -114,6 +115,7 @@ nav a:focus {
 .btn-ghost {
   background-color: none;
   border-color: var(--textOnLight);
+  font-weight: bolder;
   color: var(--textOnLight);
 }
 
@@ -126,6 +128,7 @@ nav a:focus {
 .btn-ghost:hover,
 .btn-ghost:focus {
   color: var(--Black);
+  mix-blend-mode: screen;
   border: none;
   background-color: var(--textOnHover);
 }
