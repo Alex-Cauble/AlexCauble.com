@@ -145,7 +145,7 @@ nav a:focus {
 
 .btn-ghost:hover,
 .btn-ghost:focus {
-  color: var(--Black);
+  color: black;
   mix-blend-mode: screen;
   border: none;
   background-color: var(--textOnHover);
