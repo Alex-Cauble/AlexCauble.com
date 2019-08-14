@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 :root {
-  --Black: rgba(0, 0, 0, 1);
   --textOnLight: #fff;
   --textOnHover: #aaa;
   --bgLight: #666;
@@ -14,15 +13,12 @@
 body {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  background-color: #666;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-
-/*Typography*/
 
 .title {
   font-size: 2.5rem;
@@ -39,25 +35,29 @@ img {
   margin: 0, auto;
 }
 
+.shadow {
+  box-shadow: 4px 4px 4px black;
+  margin: auto;
+}
+
 header {
-  position: absolute;
+  --TextColor: #fff;
+  --TextHover: #666;
+  --Background: transparent;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   width: 100%;
   z-index: 1;
   padding: 1em;
-  background-color: var(--bgLight);
+  background-color: var(--Background);
 }
 
-.bg-hide {
-  background-color: transparent;
-}
-
-header,
-header h1 {
-  color: var(--textOnLight);
-}
-
-nav {
-  color: var(--textOnLight);
+.nav-scrolled {
+  --TextColor: rgb(255, 255, 255);
+  --TextHover: #666;
+  --Background: #333;
 }
 
 nav ul {
@@ -70,35 +70,53 @@ nav li {
 }
 
 nav a {
-  color: var(--textOnLight);
+  color: var(--TextColor);
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 4vw;
   padding: 0.5rem;
   transition: color 150ms ease-in-out;
+  text-shadow: 3px 3px black;
 }
 
 nav a:hover,
 nav a:focus {
   outline: none;
-  color: var(--textOnHover);
+  color: var(--TextHover);
 }
 
 .home-hero {
-  position: relative;
+  position: absolute;
+  top: 0;
   background-image: url(../img/computer-hands-laptop-2115217.jpg);
-  padding: 10em 0;
-  background-position: center;
+  background-size: auto 100%;
+  background-position: initial;
   background-repeat: no-repeat;
-  background-size: auto 100vmax;
   color: var(--textOnLight);
+  align-items: center;
   width: 100%;
   height: 100vh;
 }
 
+.home-hero .title {
+  display: inline-block;
+  position: relative;
+  box-shadow: 3px 3px black;
+  background-color: var(--textOnLight);
+  color: black;
+  mix-blend-mode: screen;
+  align-self: center;
+  border-color: var(--textOnLight);
+  border-radius: 5px;
+  font-size: 12vmin;
+  margin: auto;
+  margin-top: 30vh;
+  padding: 0.15em 0.25em;
+}
+
 .bnt-home-hero {
-  margin-top: 15%;
+  margin-top: 15vh;
 }
 
 .btn {
@@ -131,4 +149,17 @@ nav a:focus {
   mix-blend-mode: screen;
   border: none;
   background-color: var(--textOnHover);
+}
+/* Media Queries */
+
+@media screen and (min-width: 1000px) {
+  nav a {
+    font-size: 40px;
+  }
+}
+
+@media (orientation: landscape) {
+  .home-hero {
+    background-size: 100% auto;
+  }
 }
