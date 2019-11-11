@@ -2,7 +2,9 @@
 :root {
   --textOnLight: #fff;
   --textOnHover: #aaa;
-  --bgLight: #666;
+  --bgLight: rgb(231, 231, 231);
+  --borderRadius: 8px;
+  --LightShadow: 0 0 8px rgba(0, 0, 0, 0.308);
 }
 * {
   margin: 0;
@@ -13,6 +15,10 @@
 body {
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  background-color: var(--bgLight);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-points-y: repeat(100%);
 }
 
 img {
@@ -36,48 +42,53 @@ img {
 }
 
 .shadow {
-  box-shadow: 4px 4px 4px black;
+  box-shadow: 2px 2px 2px black;
   margin: auto;
 }
 
 header {
   --TextColor: #fff;
   --TextHover: #666;
-  --Background: transparent;
+  --Background: rgba(10, 10, 10, 0.2);
 
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   top: 0;
   width: 100%;
   z-index: 1;
-  padding: 1em;
+  height: 2.8em;
   background-color: var(--Background);
+  transition: background-color 250ms ease-in-out;
+  scroll-behavior: smooth;
 }
 
 .nav-scrolled {
   --TextColor: rgb(255, 255, 255);
   --TextHover: #666;
-  --Background: #333;
+  --Background: rgba(12, 12, 12, 0.534);
 }
 
 nav ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 nav li {
-  display: inline-block;
-  padding: 1rem, 1rem;
+  padding: 1em, 1em;
 }
 
 nav a {
   color: var(--TextColor);
   font-weight: 900;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 4vw;
   padding: 0.5rem;
   transition: color 150ms ease-in-out;
-  text-shadow: 3px 3px black;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.555);
 }
 
 nav a:hover,
@@ -86,11 +97,9 @@ nav a:focus {
   color: var(--TextHover);
 }
 
-.home-hero {
-  position: absolute;
-  top: 0;
+section.home-hero {
   background-image: url(../img/computer-hands-laptop-2115217.jpg);
-  background-size: auto 100%;
+  background-size: cover;
   background-position: initial;
   background-repeat: no-repeat;
   color: var(--textOnLight);
@@ -99,7 +108,7 @@ nav a:focus {
   height: 100vh;
 }
 
-.home-hero .title {
+section.home-hero .title {
   display: inline-block;
   position: relative;
   box-shadow: 3px 3px black;
@@ -115,6 +124,55 @@ nav a:focus {
   padding: 0.15em 0.25em;
 }
 
+.section-header {
+  padding: 1rem 0 1rem 0;
+}
+
+.section-header h1 {
+  font-size: 56px;
+  color: rgb(36, 36, 36);
+}
+
+section.about {
+  --color: rgb(71, 71, 71);
+  --background: rgb(255, 255, 255);
+  --hover: #eee;
+
+  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.card {
+  border: none;
+  flex: 1;
+  background-color: ivory;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--LightShadow);
+  padding: 0.75rem;
+  margin: 0.75rem;
+  height: 100%;
+  max-width: 600px;
+}
+.card p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.card-head {
+  padding: 0 0 0.5rem 0;
+}
+
+.card img {
+  display: inline-block;
+  max-height: 20vh;
+  border-radius: var(--borderRadius);
+}
+
+/* Button Layouts */
 .bnt-home-hero {
   margin-top: 15vh;
 }
@@ -127,7 +185,7 @@ nav a:focus {
   padding: 0.5em 1.5em;
   border: 2px solid;
   color: var(--textOnLight);
-  transition: all 150ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .btn-ghost {
@@ -150,6 +208,7 @@ nav a:focus {
   border: none;
   background-color: var(--textOnHover);
 }
+
 /* Media Queries */
 
 @media screen and (min-width: 1000px) {
@@ -158,8 +217,13 @@ nav a:focus {
   }
 }
 
-@media (orientation: landscape) {
-  .home-hero {
-    background-size: 100% auto;
+@media only screen and (min-width: 1300px) {
+  section.about {
+    flex-direction: row;
+  }
+  img {
+    width: auto;
+    height: auto;
+    max-width: none;
   }
 }
