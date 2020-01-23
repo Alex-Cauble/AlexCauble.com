@@ -31,7 +31,7 @@ function dateDiff(firstDate, secondDate) {
 
 function getCoffeePots() {
   const coffeesMade = dateDiff(parseDate('20/8/2008'), Date.now());
-  return parseFloat(coffeesMade * 1.5).toFixed(6);
+  return parseFloat(coffeesMade * 1).toFixed(6);
 }
 setInterval(() => {
   coffeeCounter.innerText = getCoffeePots();
