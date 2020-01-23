@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="./js/main.js" defer></script>
     <title>Alex Cauble</title>
   </head>
   <body>
-    <header>
+    <header id="head">
       <nav>
         <ul>
           <li><a href="#Home">Home</a></li>
@@ -37,11 +37,9 @@
       </div>
       <section class="about" id="about">
         <div class="card">
-          <div class="card-head">
+          <div class="card-head hockey">
             <h3 class="card-title">Hockey</h3>
-            <img src="./img/hockeyStuff.png" alt="Hocky Stick" srcset="" />
           </div>
-          <hr />
           <div class="card-body">
             <p>
               I've been a huge Minnesota Wild fan since they came into the league. There have been
@@ -51,11 +49,9 @@
         </div>
 
         <div class="card">
-          <div class="card-head">
+          <div class="card-head fishing">
             <h3 class="card-title">Fishing</h3>
-            <img src="./img/fishing.jpg" alt="Bass Fishing" srcset="" />
           </div>
-          <hr />
           <div class="card-body">
             <p>
               I've been in love with fishing since I picked it up in 2010. In the summer I usually
@@ -67,14 +63,13 @@
         </div>
 
         <div class="card">
-          <div class="card-head">
-            <h3 class="card-title">Coffee</h3>
-            <img src="./img/HotCoffee.png" alt="Coffee Icon" srcset="" />
-            <div class="lifetime-coffees">Total Coffee Made</div>
-            <div class="coffee-counter">5000</div>
-          </div>
-          <hr />
+          <div class="card-head coffee"></div>
           <div class="card-body">
+            <div class="card-title">
+              <h3 class="card-title">Coffee</h3>
+              <div class="lifetime-coffees">Total Coffee Pots Made</div>
+              <div id="coffee-counter"></div>
+            </div>
             <p>
               I've been drinking coffee since I became an adult I've always enjoyed a good cup of
               coffee so start my morning. I prefer medium and dark roast coffee. I also prefer
@@ -95,25 +90,27 @@
           </div>
           <div class="card-content">
             <p>
-              This project is a way to have useres whitelist their devices by their mac address on
+              This project is a way to have useres whitelist their devices by their MAC address on
               the network.
             </p>
             <ul class="outer-list">
               <li>Angular 8</li>
-              <ul class="innder-list">
+              <ul class="inner-list">
                 <li>TypeScript</li>
                 <li>SCSS</li>
                 <li>RXJS Observables</li>
               </ul>
               <li>Node JS</li>
               <ul class="inner-list">
+                <li>Javascript</li>
                 <li>Passport JS</li>
                 <li>Express JS</li>
                 <li>Mongoose JS</li>
               </ul>
               <li>Powershell</li>
-              <ul class="innerlist">
+              <ul class="inner-list">
                 <li>DHCP Server Commands</li>
+                <li>Pester Unit Testing</li>
               </ul>
             </ul>
           </div>
