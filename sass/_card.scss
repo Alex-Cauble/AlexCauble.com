@@ -1,0 +1,66 @@
+.card {
+  border: none;
+  flex: 1;
+  background-color: ivory;
+  border-radius: $borderRadius;
+  box-shadow: $LightShadow;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  height: 100%;
+  max-width: 600px;
+  p {
+    font-size: 20px;
+    text-align: center;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .card-body {
+    background-color: whitesmoke;
+    border-radius: $borderRadius;
+  }
+
+  .card-head {
+    h3: {
+      color: pink;
+    }
+    padding: 0 0 0.5rem 0;
+    width: 100%;
+    height: max(300px);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $borderRadius;
+    margin-bottom: 5px;
+    .card-title {
+      padding-top: 0.5rem;
+    }
+  }
+  .hockey {
+    background-image: url(../img/hockeyStuff.png);
+  }
+  .coffee {
+    background-image: url(../img/HotCoffee.png);
+  }
+  .fishing {
+    background-image: url(../img//fishing.jpg);
+    background-size: cover;
+    color: $TextColor;
+    .card-body {
+      background-color: none;
+    }
+  }
+  .angular-icon {
+    background-image: url(../img/angular-icon.svg);
+  }
+
+  .node-icon {
+    background-image: url(../img/nodejs.png);
+  }
+
+  .card img {
+    display: inline-block;
+    max-height: 20vh;
+    border-radius: $borderRadius;
+  }
+}

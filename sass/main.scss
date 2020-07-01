@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import './card';
 $textOnHover: #aaa;
 $bgLight: rgb(231, 231, 231);
 $borderRadius: 5px;
@@ -22,6 +23,12 @@ body {
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-points-y: repeat(100%);
+  p {
+    line-height: 1.9rem;
+  }
+  h1 {
+    line-height: 0.9;
+  }
 }
 
 img {
@@ -78,6 +85,7 @@ header {
   z-index: 1;
   height: 2.8em;
   background-color: none;
+  padding: 2.5rem;
   color: white;
   transition: background-color 250ms ease-in-out;
   scroll-behavior: smooth;
@@ -123,7 +131,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.637);
 }
 
-section.home-hero {
+.home-hero {
   background-image: url(../img/computer-hands-laptop-2115217.jpg);
   background-size: cover;
   background-position: initial;
@@ -134,7 +142,7 @@ section.home-hero {
   height: 100vh;
 }
 
-section.home-hero .title {
+.home-hero .title {
   display: inline-block;
   position: relative;
   box-shadow: 3px 3px black;
@@ -159,67 +167,19 @@ section.home-hero .title {
   color: rgb(36, 36, 36);
 }
 
-section.about {
+.about,
+.projects {
   color: black;
-  display: flex;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
 }
-.card {
-  border: none;
-  flex: 1;
-  background-color: ivory;
-  border-radius: $borderRadius;
-  box-shadow: $LightShadow;
-  padding: 0.75rem;
-  margin: 0.75rem;
-  height: 100%;
-  max-width: 600px;
-  p {
-    font-size: 20px;
-    text-align: center;
-    padding: 0.5rem 0 0 0;
-  }
-
-  .card-body {
-    background-color: whitesmoke;
-    border-radius: $borderRadius;
-  }
-
-  .card-head {
-    padding: 0 0 0.5rem 0;
-    width: 100%;
-    height: max(300px);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: $borderRadius;
-    margin-bottom: 5px;
-    .card-title {
-      padding-top: 0.5rem;
-    }
-  }
-  .hockey {
-    background-image: url(../img/hockeyStuff.png);
-  }
-  .coffee {
-    background-image: url(../img/HotCoffee.png);
-  }
-  .fishing {
-    background-image: url(../img//fishing.jpg);
-    background-size: cover;
-    color: $TextColor;
-    .card-body {
-      background-color: none;
-    }
-  }
-  .card img {
-    display: inline-block;
-    max-height: 20vh;
-    border-radius: $borderRadius;
-  }
+.projects {
+  max-width: 1400px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Button Layouts */
@@ -234,7 +194,6 @@ section.about {
   text-transform: uppercase;
   padding: 0.5em 1.5em;
   border: 2px solid;
-  box-sizing: content-box;
   color: $color;
   transition: background-color 250ms ease-in-out;
   transition: border 250ms ease-in-out;
@@ -262,6 +221,12 @@ section.about {
 }
 
 /* Media Queries */
+@media screen and (max-width: 800px) {
+  .about,
+  .projects {
+    display: flex;
+  }
+}
 
 @media screen and (min-width: 1000px) {
   nav a {
@@ -270,7 +235,8 @@ section.about {
 }
 
 @media only screen and (min-width: 1300px) {
-  section.about {
+  .about,
+  .projects {
     flex-direction: row;
   }
   img {

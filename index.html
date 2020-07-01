@@ -8,6 +8,7 @@
     <script src="./js/main.js" defer></script>
     <title>Alex Cauble</title>
   </head>
+
   <body>
     <header id="head">
       <nav>
@@ -55,7 +56,7 @@
           <div class="card-body">
             <p>
               I've been in love with fishing since I picked it up in 2010. In the summer I usually
-              bass fish and in the winter I normally go for Walleye and Crapie. It's always a fun
+              bass fish and in the winter I normally go for Walleye and Crappie. It's always a fun
               challenge to see how to best target them. I like to think of it in terms of playing a
               numbers and percentages game.
             </p>
@@ -71,9 +72,9 @@
               <div id="coffee-counter"></div>
             </div>
             <p>
-              I've been drinking coffee since I became an adult I've always enjoyed a good cup of
-              coffee so start my morning. I prefer medium and dark roast coffee. I also prefer
-              coffee out of the french press when time permits.
+              I've been drinking coffee ever since I went off to college. Ever Since I've always
+              enjoyed a good cup of coffee so start my morning. I prefer medium and dark roast
+              coffee. I also prefer coffee out of the french press when time permits.
             </p>
           </div>
         </div>
@@ -85,32 +86,68 @@
 
       <section class="projects" id="projects">
         <div class="card">
-          <div class="cardheader">
-            <img src="" alt="" sizes="" srcset="" />
-          </div>
+          <h3 class="card-title">White List Devices Project</h3>
+          <div class="card-head angular-icon"></div>
           <div class="card-content">
             <p>
-              This project is a way to have useres whitelist their devices by their MAC address on
-              the network.
+              This project is a way to have users add their devices MacAddress to a whitelist. This
+              whitelist is then put into the DHCP Server. Finally there's an automated script that
+              will run against the api endpoint. This automated script will deactivate devices and
+              E-mail the owner of that device to notify them.
             </p>
             <ul class="outer-list">
-              <li>Angular 8</li>
+              <li>Angular 9</li>
               <ul class="inner-list">
                 <li>TypeScript</li>
                 <li>SCSS</li>
                 <li>RXJS Observables</li>
+                <li>Components</li>
               </ul>
               <li>Node JS</li>
               <ul class="inner-list">
                 <li>Javascript</li>
-                <li>Passport JS</li>
-                <li>Express JS</li>
-                <li>Mongoose JS</li>
+                <li>PassportJS</li>
+                <li>ExpressJS</li>
+              </ul>
+              <ul class="inner-list">
+                <li>MongooseJS</li>
+                <li>MochaJS</li>
+                <li>ChaiJS</li>
               </ul>
               <li>Powershell</li>
               <ul class="inner-list">
-                <li>DHCP Server Commands</li>
+                <li>DHCP Server Cmdlets</li>
                 <li>Pester Unit Testing</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">School Inventory/Library and Repair API</h3>
+          <div class="card-head node-icon"></div>
+          <div class="card-content">
+            <p>
+              This is the project I'm <strong>currently </strong> working on. It's a inventory
+              solution with integrated computer repair and library checkout system. It uses express
+              as a backend for a REST api. The plan is this to be an open source solution for
+              schools to be able to use with an emphasis on tooling for schools that have 1 to 1
+              students to devices.
+            </p>
+            <ul class="outer-list">
+              <li>Node JS</li>
+              <ul class="inner-list">
+                <li>TypeScript</li>
+                <li>JWT Auth</li>
+                <li>ExpressJS</li>
+              </ul>
+              <ul class="inner-list">
+                <li>Objection JS</li>
+                <li>MochaJS</li>
+                <li>ChaiJS</li>
+              </ul>
+              <li>Postgresql</li>
+              <ul class="inner-list">
+                <li>Knex js Query Builder</li>
               </ul>
             </ul>
           </div>

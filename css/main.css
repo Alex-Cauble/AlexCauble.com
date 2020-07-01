@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background-color: #e7e7e7;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-points-y: repeat(100%);
+      scroll-snap-points-y: repeat(100%);
+}
+
+body p {
+  line-height: 1.9rem;
+}
+
+body h1 {
+  line-height: 0.9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+ul .inner-list {
+  background-color: lightgrey;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+ul .inner-list li {
+  padding: 0.5em 1em;
+  margin: 2px 0;
+}
+
+ul li {
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.title span {
+  font-weight: 300;
+  font-size: 0.9em;
+  display: block;
+}
+
+.container {
+  width: 95%;
+  margin: 0, auto;
+}
+
+.shadow {
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 2.8em;
+  background-color: none;
+  padding: 2.5rem;
+  color: white;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  scroll-behavior: smooth;
+}
+
+header :hover {
+  color: #666;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav li {
+  padding: 1em, 1em;
+}
+
+nav a {
+  color: #e0dede;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 4vw;
+  padding: 0.5rem;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.555);
+}
+
+nav a:hover,
+nav a:focus {
+  outline: none;
+  color: #666;
+}
+
+.nav-scrolled {
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+.nav-scrolled nav a {
+  color: whitesmoke;
+}
+
+.home-hero {
+  background-image: url(../img/computer-hands-laptop-2115217.jpg);
+  background-size: cover;
+  background-position: initial;
+  background-repeat: no-repeat;
+  color: #e0dede;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-hero .title {
+  display: inline-block;
+  position: relative;
+  -webkit-box-shadow: 3px 3px black;
+          box-shadow: 3px 3px black;
+  background-color: #e0dede;
+  color: black;
+  mix-blend-mode: screen;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-color: #e0dede;
+  border-radius: 5px;
+  font-size: 12vmin;
+  margin: auto;
+  margin-top: 30vh;
+  padding: 0.15em 0.25em;
+}
+
+.section-header {
+  padding: 1rem 0 1rem 0;
+}
+
+.section-header h1 {
+  font-size: 56px;
+  color: #242424;
+}
+
+.about,
+.projects {
+  color: black;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.projects {
+  max-width: 1400px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: ivory;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.308);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.308);
+  padding: 0.75rem;
+  margin: 0.75rem;
+  height: 100%;
+  max-width: 600px;
+}
+
+.card p {
+  font-size: 20px;
+  text-align: center;
+  text-align: left;
+  padding: 1rem;
+}
+
+.card .card-body {
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.card .card-head {
+  h3-color: pink;
+  padding: 0 0 0.5rem 0;
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.card .card-head .card-title {
+  padding-top: 0.5rem;
+}
+
+.card .hockey {
+  background-image: url(../img/hockeyStuff.png);
+}
+
+.card .coffee {
+  background-image: url(../img/HotCoffee.png);
+}
+
+.card .fishing {
+  background-image: url(../img//fishing.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.card .fishing .card-body {
+  background-color: none;
+}
+
+.card .angular-icon {
+  background-image: url(../img/angular-icon.svg);
+}
+
+.card .node-icon {
+  background-image: url(../img/nodejs.png);
+}
+
+.card .card img {
+  display: inline-block;
+  max-height: 20vh;
+  border-radius: 5px;
+}
+
+/* Button Layouts */
+.bnt-home-hero {
+  margin-top: 15vh;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1.5em;
+  border: 2px solid;
+  color: #e0dede;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  -webkit-transition: border 250ms ease-in-out;
+  transition: border 250ms ease-in-out;
+}
+
+.btn-ghost {
+  background-color: none;
+  border-color: #e0dede;
+  font-weight: bolder;
+  color: #e0dede;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #aaa;
+  border: none;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+  color: black;
+  mix-blend-mode: screen;
+  border: none;
+  background-color: #aaa;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  section.about,
+  section.projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav a {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  section.about,
+  section.projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  img {
+    width: auto;
+    height: auto;
+    max-width: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
