@@ -1,0 +1,35 @@
+.bnt-home-hero {
+  margin-top: 15vh;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1.5em;
+  border: 2px solid;
+  color: $color;
+  transition: background-color 250ms ease-in-out;
+  transition: border 250ms ease-in-out;
+}
+
+.btn-ghost {
+  background-color: none;
+  border-color: $color;
+  font-weight: bolder;
+  color: $color;
+}
+
+.btn:hover,
+.btn:focus {
+  color: $textOnHover;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+  color: black;
+  mix-blend-mode: screen;
+  border: none;
+  background-color: $textOnHover;
+}

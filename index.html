@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="keywords" content="web developer profile application portfolio" />
+    <meta name="description" content="A web developer portfolio" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="./js/p5.min.js" defer></script>
+    <script src="./js/sketch.js" defer></script>
     <script src="./js/main.js" defer></script>
     <title>Alex Cauble</title>
   </head>
@@ -31,7 +35,7 @@
           Alex Cauble
         </h1>
         <br />
-        <a href="#" class="btn bnt-home-hero btn-ghost">Contact Me</a>
+        <a href="#" class="btn bnt-home-hero btn-ghost" style>Contact Me</a>
       </section>
       <div class="section-header">
         <h1>About Me</h1>
@@ -56,9 +60,9 @@
           <div class="card-body">
             <p>
               I've been in love with fishing since I picked it up in 2010. In the summer I usually
-              bass fish and in the winter I normally go for Walleye and Crappie. It's always a fun
-              challenge to see how to best target them. I like to think of it in terms of playing a
-              numbers and percentages game.
+              bass fish and in the winter I normally go for Largemouth Bass and Crappie. It's always
+              a fun challenge to see how to best target them. I like to think of it in terms of
+              playing a numbers and percentages game.
             </p>
           </div>
         </div>
@@ -85,6 +89,46 @@
       </div>
 
       <section class="projects" id="projects">
+        <div class="card">
+          <h3 class="card-title">ToDo List Full Stack</h3>
+          <div class="card-head nest-icon"></div>
+          <div class="card-content">
+            <p>
+              Created a Rest API with basic auth using JWT to store To Do's for a user. An Angular
+              to create and edit To Do items. I made this project to help learn the nestJS
+              environment.
+            </p>
+            <ul class="outer-list">
+              <li>Angular 9</li>
+              <ul class="inner-list">
+                <li>TypeScript</li>
+                <li>SCSS</li>
+                <li>RXJS Observables</li>
+                <li>Components</li>
+              </ul>
+              <li>NestJs</li>
+              <ul class="inner-list">
+                <li>PassportJS Local Auth</li>
+                <li>Class-Validator</li>
+                <li>TypeORM</li>
+              </ul>
+              <ul class="inner-list">
+                <li></li>
+                <li>Jest</li>
+              </ul>
+              <li>Docker</li>
+              <ul class="inner-list">
+                <li>Docker-Compose</li>
+                <li>Docker Volumes</li>
+              </ul>
+              <li>Postgresql</li>
+              <!-- <ul class="inner-list">
+                <li>DHCP Server Cmdlets</li>
+                <li>Pester Unit Testing</li>
+              </ul> -->
+            </ul>
+          </div>
+        </div>
         <div class="card">
           <h3 class="card-title">White List Devices Project</h3>
           <div class="card-head angular-icon"></div>
@@ -134,6 +178,11 @@
               students to devices.
             </p>
             <ul class="outer-list">
+              <li>Angular 9</li>
+              <ul class="inner-list">
+                <li></li>
+                <li>Still In Development</li>
+              </ul>
               <li>Node JS</li>
               <ul class="inner-list">
                 <li>TypeScript</li>
@@ -144,11 +193,10 @@
                 <li>Objection JS</li>
                 <li>MochaJS</li>
                 <li>ChaiJS</li>
+                <li>KnexJS</li>
+                <li>ObjectionJS</li>
               </ul>
               <li>Postgresql</li>
-              <ul class="inner-list">
-                <li>Knex js Query Builder</li>
-              </ul>
             </ul>
           </div>
         </div>

@@ -10,7 +10,6 @@
   max-width: 600px;
   p {
     font-size: 20px;
-    text-align: center;
     text-align: left;
     padding: 1rem;
   }
@@ -21,9 +20,6 @@
   }
 
   .card-head {
-    h3: {
-      color: pink;
-    }
     padding: 0 0 0.5rem 0;
     width: 100%;
     height: max(300px);
@@ -35,6 +31,9 @@
     .card-title {
       padding-top: 0.5rem;
     }
+  }
+  P {
+    line-height: 20px;
   }
   .hockey {
     background-image: url(../img/hockeyStuff.png);
@@ -50,6 +49,7 @@
       background-color: none;
     }
   }
+
   .angular-icon {
     background-image: url(../img/angular-icon.svg);
   }
@@ -58,9 +58,36 @@
     background-image: url(../img/nodejs.png);
   }
 
+  .nest-icon {
+    background-image: url(../img/nestjs-logo.svg);
+  }
+
   .card img {
     display: inline-block;
     max-height: 20vh;
     border-radius: $borderRadius;
+  }
+  .outer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    .inner-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      background-color: rgb(212, 212, 212);
+      flex-direction: row;
+      li {
+        padding: 0.5em 1em;
+        margin: 2px 0;
+        font-weight: 500;
+      }
+    }
+    li {
+      padding: 0.5em 1em;
+      display: inline-block;
+      font-weight: 700;
+    }
   }
 }
