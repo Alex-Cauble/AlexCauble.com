@@ -36,3 +36,9 @@ function getCoffeePots() {
 setInterval(() => {
   coffeeCounter.innerText = getCoffeePots();
 }, 1000);
+
+const downArrow = document.querySelector('.arrow-border');
+
+downArrow.addEventListener('click', () => {
+  document.location = '#about-header';
+});
