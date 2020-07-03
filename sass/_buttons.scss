@@ -1,17 +1,25 @@
-.bnt-home-hero {
-  margin-top: 15vh;
-}
-
 .btn {
-  display: inline-block;
-  font-size: 1.5rem;
+  // display: inline-block;
+  font-size: 4vw;
+  z-index: 2;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translate(-50%);
   text-decoration: none;
+  border-radius: $borderRadius;
   text-transform: uppercase;
   padding: 0.5em 1.5em;
   border: 2px solid;
   color: $color;
   transition: background-color 250ms ease-in-out;
   transition: border 250ms ease-in-out;
+}
+
+@media screen and (min-width: 700px) {
+  .btn {
+    font-size: 2rem;
+  }
 }
 
 .btn-ghost {
