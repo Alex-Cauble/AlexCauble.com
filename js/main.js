@@ -42,3 +42,6 @@ const downArrow = document.querySelector('.arrow-border');
 downArrow.addEventListener('click', () => {
   document.location = '#about-header';
 });
+
+// ==== Smooth Scroll Init ====
+// var scroll = new SmoothScroll('a[href*="#"]');
