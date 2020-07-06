@@ -3,7 +3,7 @@ const header = document.getElementById('head');
 const homeHero = document.querySelector('.home-hero');
 
 const sectionOneOptions = {
-  rootMargin: '-50px 0px 0px 0px',
+  rootMargin: '-80% 0px 0px 0px',
 };
 const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver) => {
   entries.forEach(entry => {
@@ -17,7 +17,7 @@ const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver
 
 sectionOneObserver.observe(homeHero);
 
-//Coffee Counter Section
+// ==== Coffee Counter Section ====
 const coffeeCounter = document.getElementById('coffee-counter');
 
 function parseDate(str) {
