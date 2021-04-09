@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="keywords" content="web developer profile application portfolio" />
     <meta name="description" content="A web developer portfolio" />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="./js/p5.min.js" defer></script>
     <script src="./js/sketch.js" defer></script>
     <script src="./js/main.js" defer></script>
@@ -20,7 +20,8 @@
           <li><a href="#Home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/alex-cauble"><svg role="img" class="github-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -35,13 +36,12 @@
           Alex Cauble
         </h1>
         <h1 class="btn bnt-home-hero btn-ghost">Contact Me</h1>
-        <!-- <a href="#">Contact Me</a> -->
-        <div class="arrow-border"><i class="arrow arrow-down"></i></div>
+        <div id="home-down-arrow" class="arrow-border"><i class="arrow arrow-down"></i></div>
       </section>
-      <div class="section-header">
+      <div class="section-header"id="about">
         <h1>About Me</h1>
       </div>
-      <section class="about" id="about">
+      <section class="about" >
         <div class="card">
           <div class="card-head hockey">
             <h3 class="card-title">Hockey</h3>
@@ -85,19 +85,19 @@
         </div>
       </section>
 
-      <div class="section-header">
+      <div class="section-header"id="projects">
         <h1>Projects</h1>
       </div>
 
-      <section class="projects" id="projects">
+      <section class="projects" >
         <div class="card">
           <h3 class="card-title">ToDo List Full Stack</h3>
           <div class="card-head nest-icon"></div>
           <div class="card-content">
             <p>
-              Created a Rest API with basic auth using JWT to store To Do's for a user. An Angular
-              to create and edit To Do items. I made this project to help learn the nestJS
-              environment.
+              Created a Rest API with basic auth using JWT to store To Do's for a user. And used Angular
+              to create and edit To Do items. I made this project to learn the nestJS
+              environment and to strengthen my testing experience.
             </p>
             <ul class="outer-list">
               <li>Angular 9</li>
@@ -172,17 +172,20 @@
           <div class="card-head node-icon"></div>
           <div class="card-content">
             <p>
-              This is the project I'm <strong>currently </strong> working on. It's a inventory
+              This is the project I'm currently working on. It's a inventory
               solution with integrated computer repair and library checkout system. It uses express
               as a backend for a REST api. The plan is this to be an open source solution for
               schools to be able to use with an emphasis on tooling for schools that have 1 to 1
               students to devices.
             </p>
             <ul class="outer-list">
-              <li>Angular 9</li>
-              <ul class="inner-list">
-                <li></li>
+              <li>Angular 11</li>
+              <!-- <ul class="inner-list">
                 <li>Still In Development</li>
+              </ul> -->
+              <ul class="inner-list">
+                <li>Cypress</li>
+                <li>Material UI</li>
               </ul>
               <li>Node JS</li>
               <ul class="inner-list">
@@ -202,6 +205,26 @@
           </div>
         </div>
       </section>
+        <div class="section-header">
+          <h1 class="card-title">Contact Me<h1>
+        </div>
+      <section id="contact" class="contact">
+        <div class="card">
+          <div class="card-title"></div>
+          <div class="card-head avatar"></div>
+          <div class="card-content">
+            <ul>
+              <li>
+                E-Mail: <a href="mailto:alexander.t.cauble@gmail.com">alexander.t.cauble@gmail.com</a>
+              </li>
+            </ul>
+            <p>
+              Hi I'm Alex. I've been working with web technologies for a while now.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer></footer>
   </body>
 </html>
