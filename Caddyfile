@@ -1,0 +1,9 @@
+{
+  local_certs
+}
+
+localhost { 
+  root * /home/alex/Projects/AlexCauble.com
+  file_server 
+}
+
