@@ -22,6 +22,12 @@ const dwnArrowBtn = document.querySelector("#home-down-arrow");
 dwnArrowBtn.addEventListener("click", () => {
   window.scrollBy({ top: windowHeight, behavior: "smooth" });
 });
+// Click Contact Me
+const homeHeroButton = document.querySelector(".btn-home-hero");
+homeHeroButton.addEventListener("click", () => {
+  // window.scrollTo(0, document.body.scrollHeight);
+  window.scrollTo({ behavior: "smooth", top: document.body.scrollHeight });
+});
 
 //Coffee Counter Section
 const coffeeCounter = document.getElementById("coffee-counter");

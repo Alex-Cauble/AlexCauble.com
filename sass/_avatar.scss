@@ -1,0 +1,26 @@
+.avatar-container {
+  position: absolute;
+  z-index: 70000;
+  left: 50vw;
+  top: 30vh;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 400px;
+  width: 400px;
+  img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    transform: scale(0.6);
+    transition: all 0.2s linear;
+    &:hover {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

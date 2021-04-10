@@ -1,4 +1,34 @@
 .card {
+  .avatar {
+    background-image: url(../img/pencil_portrait.jpg);
+  }
+  .hockey {
+    background-image: url(../img/hockeyStuff.png);
+  }
+  .coffee {
+    background-image: url(../img/HotCoffee.png);
+  }
+  .fishing {
+    background-image: url(../img//fishing.jpg);
+    background-size: cover;
+    color: $TextColor;
+    .card-body {
+      background-color: none;
+    }
+  }
+
+  .angular-icon {
+    background-image: url(../img/angular-icon.svg);
+  }
+
+  .node-icon {
+    background-image: url(../img/nodejs.png);
+  }
+
+  .nest-icon {
+    background-image: url(../img/nestjs-logo.svg);
+  }
+
   border: none;
   flex: 1;
   background-color: ivory;
@@ -35,36 +65,6 @@
   P {
     line-height: 20px;
   }
-  .hockey {
-    background-image: url(../img/hockeyStuff.png);
-  }
-  .coffee {
-    background-image: url(../img/HotCoffee.png);
-  }
-  .fishing {
-    background-image: url(../img//fishing.jpg);
-    background-size: cover;
-    color: $TextColor;
-    .card-body {
-      background-color: none;
-    }
-  }
-
-  .angular-icon {
-    background-image: url(../img/angular-icon.svg);
-  }
-
-  .node-icon {
-    background-image: url(../img/nodejs.png);
-  }
-
-  .nest-icon {
-    background-image: url(../img/nestjs-logo.svg);
-  }
-
-  .avatar {
-    background-image: url(../img/pencil_portrait.jpg);
-  }
 
   .card img {
     display: inline-block;
@@ -75,7 +75,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    list-style-type: none;
     .inner-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

@@ -5,6 +5,7 @@
 @import "./card";
 @import "./scrollbar";
 @import "./buttons";
+@import "./avatar";
 @import "./arrow";
 
 * {
@@ -24,9 +25,7 @@ body {
     background-color: $bgLight;
   }
   overflow-y: scroll;
-  scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-snap-points-y: repeat(100%);
   p {
     line-height: 1.9rem;
   }
@@ -60,6 +59,10 @@ img {
   margin: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   position: fixed;
   display: flex;
@@ -91,12 +94,13 @@ nav {
     padding: 1em, 1em;
   }
   .github-logo {
-    fill: white;
+    fill: inherit;
     height: 0.8em;
     width: 0.8em;
   }
   a {
     color: $color;
+    fill: $color;
     font-weight: 900;
     text-decoration: none;
     font-size: 4vw;
@@ -109,6 +113,7 @@ nav {
   a:focus {
     outline: none;
     color: $TextHover;
+    fill: $TextHover;
   }
 }
 .nav-scrolled {
@@ -139,7 +144,7 @@ nav {
     border-radius: 5px;
     font-size: 12vmin;
     margin: auto;
-    margin-top: 30vh;
+    margin-top: 55vh;
     padding: 0.15em 0.25em;
   }
   h1 {
