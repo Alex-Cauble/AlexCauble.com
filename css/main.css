@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900");
+.lifetime-coffees {
+  text-transform: capitalize;
+}
+
 .card {
   border: none;
   -webkit-box-flex: 1;
@@ -55,7 +59,7 @@
 }
 
 .card .card-body {
-  background-color: whitesmoke;
+  background-color: inherit;
   border-radius: 5px;
 }
 
@@ -287,14 +291,15 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  background-color: #d9edfe;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 body main {
-  background-color: #e7e7e7;
+  background-color: #d9edfe;
 }
 
 body p {
@@ -477,6 +482,7 @@ nav a:focus {
 }
 
 .contact {
+  margin-top: 5vh;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }

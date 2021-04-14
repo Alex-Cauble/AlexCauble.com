@@ -1,3 +1,6 @@
+.lifetime-coffees {
+  text-transform: capitalize;
+}
 .card {
   .avatar {
     background-image: url(../img/pencil_portrait.jpg);
@@ -45,7 +48,7 @@
   }
 
   .card-body {
-    background-color: whitesmoke;
+    background-color: inherit;
     border-radius: $borderRadius;
   }
 
