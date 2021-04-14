@@ -1,3 +1,7 @@
+@import './variables';
+:root {
+  scroll-padding-top: $headerHeight + 2em;
+}
 html::-webkit-scrollbar {
   display: block;
   width: 8px;

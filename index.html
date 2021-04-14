@@ -49,67 +49,19 @@
     <main>
       <section class="container home-hero" id="Home">
         <div class="avatar-container">
-          <picture class="avatar">
-            <img
-              src="./img/computer-hands-laptop-2115217.jpg"
-              alt="Alex Headshot"
-            />
-          </picture>
+          <img
+            class="avatar"
+            srcset="./img/headshot-sm.webp, ./img/headshot.webp 2x"
+            src="./img/headshot.jpg"
+            alt="Alex Headshot"
+          />
         </div>
         <h1 class="title">Alex Cauble</h1>
         <h1 class="btn btn-home-hero btn-ghost">Contact Me</h1>
-        <div id="home-down-arrow" class="arrow-border">
+        <a href="#about" id="home-down-arrow" class="arrow-border">
           <i class="arrow arrow-down"></i>
-        </div>
+        </a>
       </section>
-      <div class="section-header" id="about">
-        <h1>About Me</h1>
-      </div>
-      <section class="about">
-        <div class="card">
-          <div class="card-head hockey">
-            <h2 class="card-title">Hockey</h2>
-          </div>
-          <div class="card-body">
-            <p>
-              I've been a huge Minnesota Wild fan since they came into the
-              league. There have been a number of seasons that I've watched
-              every game.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2 class="card-title">Fishing</h2>
-          <div class="card-head fishing"></div>
-          <div class="card-body">
-            <p>
-              I've been in love with fishing since I picked it up in 2010. In
-              the summer I usually bass fish and in the winter I normally go for
-              Largemouth Bass and Crappie. It's always a fun challenge to see
-              how to best target them. I like to think of it in terms of playing
-              a numbers and percentages game.
-            </p>
-          </div>
-        </div>
-
-        <div class="card coffee-card">
-          <h2 class="card-title">Coffee</h2>
-          <div class="card-head coffee"></div>
-          <div class="card-body">
-            <div class="card-title">
-              <div class="lifetime-coffees">lifetime coffee pots estimate</div>
-              <div id="coffee-counter">0</div>
-            </div>
-            <p>
-              One of my favorite things to do is try new coffee blends. When I
-              go the the grocery store, I try to find unique coffee that will
-              keep me interested.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <div class="section-header" id="projects">
         <h1>Projects</h1>
       </div>
@@ -230,7 +182,56 @@
           </div>
         </div>
       </section>
-      <section ="contact" class="contact">
+
+      <div class="section-header" id="about">
+        <h1>About Me</h1>
+      </div>
+      <section class="about">
+        <div class="card">
+          <div class="card-head hockey">
+            <h2 class="card-title">Hockey</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              I've been a huge Minnesota Wild fan since they came into the
+              league. There have been a number of seasons that I've watched
+              every game.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Fishing</h2>
+          <div class="card-head fishing"></div>
+          <div class="card-body">
+            <p>
+              I've been in love with fishing since I picked it up in 2010. In
+              the summer I usually bass fish and in the winter I normally go for
+              Largemouth Bass and Crappie. It's always a fun challenge to see
+              how to best target them. I like to think of it in terms of playing
+              a numbers and percentages game.
+            </p>
+          </div>
+        </div>
+
+        <div class="card coffee-card">
+          <h2 class="card-title">Coffee</h2>
+          <div class="card-head coffee"></div>
+          <div class="card-body">
+            <div class="card-title">
+              <div class="lifetime-coffees">lifetime coffee pots estimate</div>
+              <div id="coffee-counter">0</div>
+            </div>
+            <p>
+              One of my favorite things to do is try new coffee blends. When I
+              go the the grocery store, I try to find unique coffee that will
+              keep me interested.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
         <div class="card">
           <h2 class="card-title">Contact Me</h2>
           <!-- <div class="card-head avatar"></div> -->

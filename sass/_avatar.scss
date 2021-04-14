@@ -17,7 +17,8 @@
     width: 100%;
     opacity: 0.6;
     transform: scale(0.6);
-    transition: all 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: opacity 0.2s linear;
     &:hover {
       transform: scale(1);
       opacity: 1;
