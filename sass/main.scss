@@ -21,10 +21,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-color: $lightSkyBlue;
-  main {
-    background-color: $lightSkyBlue;
-  }
+  background-color: $pageBG;
   overflow-y: scroll;
   overflow-x: hidden;
   p {
@@ -96,8 +93,8 @@ nav {
   }
   .github-logo {
     fill: inherit;
-    height: 0.8em;
-    width: 0.8em;
+    height: 4vh;
+    width: 4vh;
   }
   a {
     color: $color;
@@ -162,13 +159,14 @@ nav {
   color: rgb(36, 36, 36);
 }
 
-.contact,
 .about,
 .projects {
+  margin: auto;
   max-width: 1400px;
   color: black;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -176,8 +174,9 @@ nav {
 }
 
 .contact {
-  margin-top: 5vh;
-  grid-template-columns: 1fr;
+  display: flex;
+  margin: 30px 0 20px 0;
+  justify-content: center;
 }
 
 // *** Footer *** //
