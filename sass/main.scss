@@ -32,6 +32,11 @@ body {
   }
 }
 
+.container {
+  padding: 20px 0 20px 0;
+  margin: auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -52,8 +57,17 @@ img {
   margin: 0, auto;
 }
 
+// .section-header {
+//   color: $textOnBlue;
+//   h1,
+//   h2,
+//   h3 {
+//     color: inherit;
+//   }
+// }
+
 .shadow {
-  box-shadow: 2px 2px 2px black;
+  box-shadow: $shadowZ1;
   margin: auto;
 }
 
@@ -152,11 +166,13 @@ nav {
 
 .section-header {
   padding: 1rem 0 1rem 0;
-}
-
-.section-header h1 {
-  font-size: 56px;
-  color: rgb(36, 36, 36);
+  h1,
+  h2,
+  h3 {
+    font-size: 56px;
+    color: $textOnBlue;
+    text-shadow: $textShadow;
+  }
 }
 
 .about,

@@ -46,7 +46,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="container home-hero" id="Home">
         <div class="avatar-container">
           <img
@@ -63,11 +63,10 @@
         </a>
       </section>
       <div class="section-header" id="projects">
-        <h1>Projects</h1>
+        <h1 class="section-header">Projects</h1>
       </div>
 
       <section class="projects grid-container">
-          
         <div class="card">
           <h2 class="card-title">ToDo List Full Stack</h2>
           <div class="card-head nest-icon"></div>
@@ -109,13 +108,15 @@
           <div class="card-title">
             <h2>Created Sisters Personal Site</h2>
           </div>
-          <div class="card-head vanilla-js-icon"></div>
+          <div class="card-head">
+            <img alt="image of project website" src="./img/xtinawebpage.webp" />
+          </div>
           <div class="card-content">
             <p>
               This project was one I built earlier in my learning web dev
-              process. But I did spend a good ammount of time trying to make it
-              as responsive as possible because, unlike some of my other
-              projects I knew it was going to be in use.
+              process. But I did spend a good amount of time trying to make it
+              as responsive as possible. There were some compromises that needed
+              to be made
             </p>
           </div>
         </div>
@@ -195,7 +196,7 @@
       </section>
 
       <div class="section-header" id="about">
-        <h1>About Me</h1>
+        <h1 class="section-header">About Me</h1>
       </div>
       <section class="about">
         <div class="card">
@@ -213,7 +214,9 @@
 
         <div class="card">
           <h2 class="card-title">Fishing</h2>
-          <div class="card-head fishing"></div>
+          <div class="card-head fishing">
+            <img alt="sunset lake fishing picture" src="./img/fishing.jpg" />
+          </div>
           <div class="card-body">
             <p>
               I've been in love with fishing since I picked it up in 2010. In
@@ -243,13 +246,17 @@
       </section>
 
       <section id="contact" class="contact">
-        <div class="card">
+        <div class="card shadow">
           <h2 class="card-title">Contact Me</h2>
           <!-- <div class="card-head avatar"></div> -->
           <div class="card-content">
             <p>
-              Hi I'm Alex. I've been working with web technologies for a while
-              now.
+              Hi I'm Alex. I started working with web technologies in about
+              2018. Started with just making some internal tooling things for
+              reporting at work and really enjoyed it. Next think you know I
+              dove headfirst into teaching myself all things web. Recently I
+              have spent majority of my time trying to focus on growing as a
+              angular developer.
             </p>
             <ul>
               <li>

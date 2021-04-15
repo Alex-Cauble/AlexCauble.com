@@ -12,9 +12,12 @@
     background-image: url(../img/HotCoffee.png);
   }
   .fishing {
-    background-image: url(../img//fishing.jpg);
-    background-size: cover;
     color: $TextColor;
+    img {
+      width: 100%;
+      margin-top: 8px;
+      border-radius: $borderRadius;
+    }
     .card-body {
       background-color: none;
     }
@@ -36,7 +39,7 @@
   flex: 1;
   background-color: ivory;
   border-radius: $borderRadius;
-  box-shadow: $LightShadow;
+  box-shadow: $shadowZ1;
   padding: 0.75rem;
   height: 100%;
   max-width: 600px;
@@ -60,9 +63,9 @@
     background-repeat: no-repeat;
     border-radius: $borderRadius;
     margin-bottom: 5px;
-    .card-title {
-      padding-top: 0.5rem;
-    }
+  }
+  .card-title {
+    padding-top: 0.5rem;
   }
   P {
     line-height: 20px;
