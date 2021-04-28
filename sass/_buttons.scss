@@ -17,7 +17,9 @@
 }
 
 .card-btn {
-  display: inline-block;
+  justify-self: flex-end;
+  margin-top: 15px;
+  width: 100%;
   text-decoration: none;
   color: $nightSkyBlue;
   font-size: 24px;
