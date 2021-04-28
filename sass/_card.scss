@@ -23,8 +23,18 @@
       background-color: none;
     }
   }
-
-  border: none;
+  display: grid;
+  /* prettier-ignore */
+  grid-template:
+    'title' auto
+    'head' auto
+    'body' 1fr
+    'card-button' 74px
+    / 1fr;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: start;
+  height: 100%;
   flex: 1;
   background-color: ivory;
   border-radius: $borderRadius;
