@@ -12,8 +12,7 @@ function windowResized() {
 
 function renderCanvas() {
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent('#Hope');
-  tParticles();
+  initParticles();
 }
 
 function initParticles() {
